@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -37,6 +38,14 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+      <div className="relative flex place-items-center text-center lg:mb-0 lg:grid-cols-4 lg:text-center ">
+        <Link href={`/login`} className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          rel="noopener noreferrer">    
+        <h2 className={`text-2xl font-semibold`}>
+          Login
+        </h2>
+          </Link>
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
